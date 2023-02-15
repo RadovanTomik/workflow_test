@@ -5,6 +5,7 @@ on: workflow_dispatch
 jobs:
 
   deploy:
+    if: github.actor == 'RadovanTomik'
     runs-on: ubuntu-latest
 
     environment:
