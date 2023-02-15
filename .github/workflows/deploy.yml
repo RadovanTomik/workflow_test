@@ -16,6 +16,7 @@ jobs:
         uses: appleboy/ssh-action@master
         env:
           GIT_REF: ${{ github.ref_name }}
+          FOO: "BAR"
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER}}
@@ -23,4 +24,4 @@ jobs:
           port: ${{ secrets.PORT }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script_stop: true
-          envs: GIT_REF
+          envs: GIT_REF, FOO
