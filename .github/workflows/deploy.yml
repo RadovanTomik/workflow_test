@@ -24,5 +24,3 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script_stop: true
           envs: GIT_REF
-          script: |
-            ./deploy.sh
