@@ -25,4 +25,4 @@ jobs:
           script_stop: true
           envs: GIT_REF
           script: |
-            sudo --preserve-env=GIT_REF /opt/negotiator/backup_and_deploy.sh
+            ./deploy.sh
